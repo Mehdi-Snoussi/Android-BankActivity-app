@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.slideshow.SlideshowFragment"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/input_edits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="38dp"
+        android:ems="18"
+        android:hint="Enter temperature"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Round"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="140dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="100dp">
+
+        <RadioButton
+            android:id="@+id/c2f_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="200dp"
+            android:text="Cesius -> Farenheit" />
+
+        <RadioButton
+            android:id="@+id/f2c_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginBottom="7dp"
+            android:text="Farenheit -> Celsius"/>
+    </RadioGroup>
+</RelativeLayout>
